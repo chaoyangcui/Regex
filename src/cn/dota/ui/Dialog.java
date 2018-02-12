@@ -51,7 +51,7 @@ public class Dialog extends DialogWrapper {
         f.add(timeLable);
         f.add(dayLable);
 
-        f.getContentPane().setBackground(Color.black);
+        f.getContentPane().setBackground(Color.DARK_GRAY);
 
         f.setVisible(true);
 
@@ -59,12 +59,11 @@ public class Dialog extends DialogWrapper {
         rootPanel.add(dateLable);
         rootPanel.add(timeLable);
         rootPanel.add(dayLable);
-
-
         rootPanel.add(new JTextArea(this.selectedText, 10, 15));
+
         rootPanel.setPreferredSize(new Dimension(300, 150));
-        rootPanel.setVisible(true);
         rootPanel.setBackground(Color.DARK_GRAY);
+        rootPanel.setVisible(true);
     }
 
     @Nullable
